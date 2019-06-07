@@ -123,7 +123,10 @@ REPLACE="
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
+  ui_print "MIUI Google Play DF-DFERH-01-FIX"
+  ui_print "*******************************"
+  ui_print "Made by Kenvix <i@kenvix.com>"
+  ui_print "see https://github.com/kenvix/magisk-module-miui-df-dferh-01-fix"
   ui_print "*******************************"
 }
 
@@ -143,6 +146,7 @@ on_install() {
 set_permissions() {
   # The following is the default rule, DO NOT remove
   set_perm_recursive $MODPATH 0 0 0755 0644
+  set_perm_recursive $MODPATH/system/etc/permissions/services.cn.google.xml 0 0 0000 0000
 
   # Here are some examples:
   # set_perm_recursive  $MODPATH/system/lib       0     0       0755      0644
