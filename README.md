@@ -4,7 +4,7 @@ Fix Google Play DF-DFERH-01 issues on MIUI Chinese version.
 
 修复国行 MIUI 打开 Google Play 始终提示 DF-DFERH-01 的问题
 
-## 问题描述
+## Problem descripion / 问题描述
 
 自带 Google 服务框架的国行 MIUI，**即使设置全局代理**，打开 Google Play 仍然提示 DF-DFERH-01.
 
@@ -12,6 +12,8 @@ Fix Google Play DF-DFERH-01 issues on MIUI Chinese version.
 
 使用 adb logcat 查看日志，到关于请求的 404 错误。
 
-## 模块工作原理
+## How it works / 模块工作原理
+
+Invalidate `/system/etc/permissions/services.cn.google.xml`
 
 无效化 `/system/etc/permissions/services.cn.google.xml`
