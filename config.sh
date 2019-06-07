@@ -43,9 +43,6 @@ print_modname() {
   ui_print "*******************************"
   ui_print "MIUI Google Play DF-DFERH-01 fix"
   ui_print "*******************************"
-  ui_print "Made by Kenvix <i@kenvix.com>"
-  ui_print "see https://github.com/kenvix/magisk-module-miui-df-dferh-01-fix"
-  ui_print "*******************************"
 }
 
 ##########################################################################################
@@ -88,6 +85,7 @@ set_permissions() {
 
   # The following is default permissions, DO NOT remove
   set_perm_recursive  $MODPATH  0  0  0755  0644
+
 }
 
 ##########################################################################################
@@ -99,8 +97,3 @@ set_permissions() {
 # update-binary. Refrain from adding code directly into update-binary, as it will make it
 # difficult for you to migrate your modules to newer template versions.
 # Make update-binary as clean as possible, try to only do function calls in it.
-
-# @Deprecated
-copy_files() {
-
-}
