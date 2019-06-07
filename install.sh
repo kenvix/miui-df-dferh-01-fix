@@ -123,7 +123,7 @@ REPLACE="
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "MIUI Google Play DF-DFERH-01-FIX"
+  ui_print "MIUI Google Play DF-DFERH-01 fix"
   ui_print "*******************************"
   ui_print "Made by Kenvix <i@kenvix.com>"
   ui_print "see https://github.com/kenvix/magisk-module-miui-df-dferh-01-fix"

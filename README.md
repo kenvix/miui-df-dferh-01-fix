@@ -1,7 +1,17 @@
-# Magisk Installer
+# MIUI Google Play DF-DFERH-01 fix
 
-**Update `README.md` if you want to submit your module to the online repo!**
+Fix Google Play DF-DFERH-01 issues on MIUI Chinese version.
 
-For more information about how to use this module installer, please refer to [documentations](https://topjohnwu.github.io/Magisk/guides.html)
+修复国行 MIUI 打开 Google Play 始终提示 DF-DFERH-01 的问题
 
-If you are not familiar with the Markdown syntax, you can start by experimenting on GitHub's online Markdown editor, which will let you preview before publishing. If you need more help, the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) will be handy.
+## 问题描述
+
+自带 Google 服务框架的国行 MIUI，**即使设置全局代理**，打开 Google Play 仍然提示 DF-DFERH-01.
+
+反复对 Play Store/Service 清除数据、插拔 SIM 卡均无效。在其他第三方 ROM 上 Play 正常使用。
+
+使用 adb logcat 查看日志，到关于请求的 404 错误。
+
+## 模块工作原理
+
+无效化 `/system/etc/permissions/services.cn.google.xml`
