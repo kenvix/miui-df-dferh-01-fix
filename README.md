@@ -4,6 +4,8 @@ Fix Google Play DF-DFERH-01 issues on MIUI Chinese version.
 
 修复国行 MIUI 打开 Google Play 始终提示 DF-DFERH-01 的问题
 
+随包附赠 Google Photos 原始画质无限容量解锁
+
 ## Problem descripion / 问题描述
 
 **<!> IMPORTANT NOTE:** Only Chinese version MIUI has this problem. NEVER install this module if you're NOT Chinese version user.
