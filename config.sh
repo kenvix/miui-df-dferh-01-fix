@@ -42,6 +42,9 @@ LATESTARTSERVICE=false
 print_modname() {
   ui_print "*******************************"
   ui_print "MIUI Google Play DF-DFERH-01 fix"
+  ui_print "Github: https://github.com/kenvix/miui-df-dferh-01-fix"
+  ui_print "*******************************"
+  ui_print "Notice: You may need to clear all data of Google play service and Google play store if this module makes no effect."
   ui_print "*******************************"
 }
 

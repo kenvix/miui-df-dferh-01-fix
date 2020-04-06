@@ -1,7 +1,7 @@
 id=miui-df-dferh-01-fix
 name=MIUI Google Play DF-DFERH-01 fix
-version=v1.3
-versionCode=4
+version=v1.41
+versionCode=5
 author=Kenvix
 minMagisk=17000
 description=Fix Google Play DF-DFERH-01 issues on MIUI Chinese version.
